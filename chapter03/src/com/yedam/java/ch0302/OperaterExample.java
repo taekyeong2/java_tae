@@ -138,6 +138,7 @@ public class OperaterExample {
 		System.out.println("float vs double: "+(v5==v6)); //정밀도가 달라서
 		System.out.println("float vs float: "+ (v5 ==(float)v6)); //동일한 타입으로 비교하는것이 젤 좋다.
 		
+		
 		//논리 연산자
 		int charCode = 'A';
 		
@@ -163,6 +164,7 @@ public class OperaterExample {
 			System.out.println("2또는 3의 배수군요.");
 		}
 		
+		
 		// 복합 대입연산자
 		int resultA = 0;
 		resultA += 10; // resultA = resultA + 10
@@ -175,7 +177,16 @@ public class OperaterExample {
 		System.out.println("/=: "+ resultA);
 		resultA %= 3; // resultA = resultA % 3
 		System.out.println("%=: "+ resultA);
+		 
 		
+		// 삼항연산자 - 값을 반환 -> 변수에 많이 쓴다.
+		int score = 85;
+		char grade = (score > 90) ? 'A' : 'b';
+		System.out.printf("성적은 %d이고 등급은 %c 입니다.\n",score, grade);    // %c -> char타입을 문자로 변환하고 싶을때 (%d하면 숫자로 반환)
+		                                                                 // %s -> %s도 큰 범위라서 String변환해줌..
+		int age = 17;
+		String message = (age >= 20)? "성인" : "미성년" ;
+		System.out.printf("나이는 %d살이고 %s입니다.\n",age, message);   
 		
 	}
 
