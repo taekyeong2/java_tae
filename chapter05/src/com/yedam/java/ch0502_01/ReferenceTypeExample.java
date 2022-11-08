@@ -23,16 +23,51 @@ public class ReferenceTypeExample {
 		
 		//배열 for문 사용 -> 인덱스의 0부터 1씩 증가하는 성격을 이용
 		int sum = 0;
-		for(int i=0; i<3; i++) { //i<=3은 ㄴㄴ -> 인덱스와 크기는 1만큼 차이가 나니까.
+		for(int i=0; i<scores.length; i++) { //i<=3은 ㄴㄴ -> 인덱스와 크기는 1만큼 차이가 나니까.
 			sum += scores[i];
 		}
 		System.out.println("총합 : " + sum);
-		double avg = sum/3.0;
+		double avg = (double)sum/scores.length;
 		System.out.println("평균 : " + avg);
 		
 		//주의사항
-		int[] scoreList;
+		int[] scoreList = null;
 		//scoreList = {83, 90, 87};  -> 변수 선언 후에 값을 주는 것은 불가능
 		scoreList = new int[] {83, 90, 87}; // -> new 연산자 사용해야한다. (이때 값을 정확하게 줄거면 크기 주면 ㄴ)
+		//new연산자 -> 생성자 호출. 객체는 내부의 변수와 매소드에 붙어있는 정보가 많음. 기본정보와 같이 쉽게 만들수 없다.
+		sum =0;
+		for(int i=0; i<3; i++) {
+			sum += scoreList[i];
+		}
+		System.out.println("총합 : "+sum);
+		
+		sum = add2(new int[] {83,90,87});
+		System.out.println("총합 : "+sum);
+		
+		//new연산자로 배열 생성.
+		int[] array = new int[3]; //[]안 만들고자 하는 크기 지정. -> 크기가 3인 배열 생성
+		for(int i=0; i<3; i++) {
+			System.out.println("array["+i+"] : "+ array[i]);
+		}
+		
+		String[] strAry = new String[4];
+		for(int i=0; i<strAry.length; i++) {  //length -> 최대크기 직접 숫자로 입력할 필요없이 length(크기가 정수임)를 이용
+			strAry[i] = String.valueOf(i);
+		}
+		for(int i=0; i<strAry.length; i++) {  
+			System.out.println("strAry["+ i + "] : "+strAry[i]);
+		}
+		
+
+
 	}
+	
+	static int add2(int[] numList) {
+		int sum =0;
+		for(int i=0; i<numList.length; i++) {
+			sum+= numList[i];
+		}
+		return sum;
+	}
+	
 }
