@@ -4,7 +4,7 @@ public class CarExample { //실행 클래스 실행.
 	public static void main(String[] args) {
 		//car라는 클래스로 인스턴스 생성
 		Car car1 = new Car(); //new연산자 -> 생성자 호출(힙영역에 객체 만듬 -> 그 객체의 주소값이 car1변수에)
-		//car1이 인스턴스 참조
+		//car1이 (힙영역)인스턴스 참조해서 읽어옴
 		System.out.println("최대스피드 : "+ car1.maxSpeed); //내부의 속성값 출력
 		System.out.println("색깔 : "+ car1.color);
 		car1.run(); //동작 -> 함수호출 ()

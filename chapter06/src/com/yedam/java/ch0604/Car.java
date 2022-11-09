@@ -24,9 +24,9 @@ public class Car {
 		while(true) {
 			if(this.isLeftGas()) {   //while도는 동안 isLeftGas()의 참 거짓 값을 계속줌
 				System.out.println("달립니다.(gas잔량 : "+ this.gas+")");
-				this.gas--;
+				this.gas--;    // =>  참
 			}else {
-				System.out.println("멈춥니다.(gas잔량 : "+ this.gas+")");
+				System.out.println("멈춥니다.(gas잔량 : "+ this.gas+")");  // =>거짓
 				return; //break는 반복문 멈춤 , return은 해당 메소드 멈춤
 				//System.out.println("종료합니다."); -> 실행 ㄴㄴ
 			}

@@ -8,7 +8,7 @@ public class Calculator {
 
 	int plus(int x, int y) {
 		int result = x + y;
-		return result;
+		return result;  //리턴과 리턴값의 유형은 같아야함
 	}
 
 	double divide(int x, int y) {
