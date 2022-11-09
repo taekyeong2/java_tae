@@ -53,7 +53,7 @@ public class Exam07 {
 				for (int i = 0; i < list.length; i++) {
 					if (list[i] <= 1)   // 2이상의 투표를 받은 인덱스 표시 ***
 						continue;
-					System.out.printf("숫자 %d의 경우 %d번 중복되었습니다.\n", (i + 1), list[i]);  // i->인덱스 값 . ㅑi+1 -> 자리위치
+					System.out.printf("숫자 %d의 경우 %d번 중복되었습니다.\n", (i + 1), list[i]);  // i->인덱스 값 . i+1 -> 자리위치
 					isChecked = true;
 				}
 				if (!isChecked) {
