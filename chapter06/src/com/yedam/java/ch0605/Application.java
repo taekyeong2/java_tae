@@ -32,14 +32,20 @@ public class Application {
 		
 		
 		//==========================================
-		//은행 고객 정보를 관리하는 클래스
-		//1) main  2)Customer 3)Bank
-		//1) main -> 생성자를 통한 고객의 정보를 저장, 출력
-		//2) Bank -> 해당은행의 금리를 저장
-		//금리 = 현재잔액 +( 현재잔액*금리)
-		//3) Customer -> 고객의 정보를 저장
-		//이름, 은행명, 계좌, 잔액의 필드 
-		//getInfo() : 입력한 정보 출력
-		// withDraw() :출근할때 정보를 출력
+	
+		Member mem = new Member();
+		//1) mem의 인스턴스 필드에 접근 가능한지 확인
+		//2) setter, getter로 데이터 입력 및 출력
+		mem.setId("yedam");
+		mem.setTel("010-123-1234");
+		mem.setAge(10);
+		
+		System.out.println("id : " + mem.getId());
+		System.out.println("tel : " + mem.getTel());
+		System.out.println("age : " + mem.getAge());
+		
+		
+		
+		
 	}
 }

@@ -35,7 +35,7 @@ public class ConstanNo {
 	public static void words(String words, char word) {
 		String getWord = words + String.valueOf(word);
 		System.out.println(getWord);
-		String getWord1 = this.words + String.valueOf(this.word);
+		//String getWord1 = this.words + String.valueOf(this.word);
 		//                ==========                 =========== -> 힙영역에 있는 애들
 		//                                                      (일반 기본타입, 참조타입)은 
 		//                                                        Static영역 접근 ㄴㄴㄴ

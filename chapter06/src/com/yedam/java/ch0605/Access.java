@@ -18,9 +18,10 @@ public class Access {
 	
 	//메소드
 	public void free() {
-		System.out.println("접근가능 합니다.");
+		System.out.println("접근 가능 합니다.");
+		privacy(); //다른 메소를 활용해서 호출할 수 있다.
 	}
-	private void privacy{
-		System.out.println("접근불가능 합니다.");
+	private void privacy(){
+		System.out.println("접근 불가능 합니다.");
 	}
 }
