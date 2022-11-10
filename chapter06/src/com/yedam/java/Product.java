@@ -70,8 +70,8 @@ public class Product {
 				max =  pList[i].getSprice();
 				System.out.println("최고 가격 제품 : "+ pList[i].getpName());
 			}
-			
 		}
+		//제품합
 		int sum = 0;
 		for(int i=0; i<pList.length; i++) {
 			if(pList[i].getSprice() == max) continue;
