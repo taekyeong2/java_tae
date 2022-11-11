@@ -2,6 +2,7 @@ package com.yedam.java.ch0702;
 
 public class Application {
 	public static void main(String[] args) {
+		//필드의 다형성
 		Car car = new Car();
 
 		for (int i = 1; i <= 5; i++) {
@@ -16,7 +17,7 @@ public class Application {
 			case 1:
 				System.out.println("앞왼쪽 한국타이어로 교체");
 				//(부모) frontLeftTire(-> Tire 타입) (Tire의 생성자로 만든 객체)
-				//=> Tire타입의 자식 객체를 상속받은 타이어로 교체(자동타입변환) 
+				//=> Tire타입의 자식 객체를 상속받은 타이어를 넣어줌(자동타입변환) 
 				// -> (자동타입변황으로)자식에 저장된 오버라이딩된 메소드 활용
 				// (같은 규격(Tire)이지만 각각 차이(오버라이딩)가 있음  
 				//   -> 하나의 규격(클래스)으로 다양한걸(자식객체) 만드는것 ->다형성)
