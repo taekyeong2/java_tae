@@ -10,12 +10,15 @@ public class Application {
 
 		Movie movie = new Movie("추격자", 7, 5, "스릴러");
 		Performance performance = new Performance("지킬앤하이드", 9, 10, "뮤지컬");
+		
+		//영화 점수 입력
+		System.out.println("영화 점수를 입력하세요. ");
 		while (run) {
-			System.out.println("영화 점수를 입력하세요> ");
-			int count1 = Integer.parseInt(sc.nextLine());
-			movie.setTotalScore(count1);
-			int count2 = Integer.parseInt(sc.nextLine());
-			performance.setTotalScore(count2);
+			
+			System.out.println("추격자> ");
+			movie.inputScore();
+			System.out.println("지킬앤하이드> ");
+			performance.inputScore();
 
 			System.out.println("계속 입력하시겠습니까? y/n");
 			confirm = sc.nextLine();
@@ -25,8 +28,9 @@ public class Application {
 				run = false;
 			}
 		}
-
-		movie.getInformation();  // 이상
+		
+		//영화정보 출력
+		movie.getInformation();  
 		performance.getInformation();
 	}
 }

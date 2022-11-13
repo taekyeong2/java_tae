@@ -1,6 +1,7 @@
 package com.yedam.java.homework03;
 
 public class Performance extends Culture{
+	
      String genre;
 	
 
@@ -11,13 +12,13 @@ public class Performance extends Culture{
 
 	@Override
 	public void getInformation() {
-		System.out.println("영화제목: "+ movieName);
+		System.out.println("공연제목: "+ movieName);
 		System.out.println("장르: "+ genre);
 		System.out.println("감독: "+ derecterNum);
 		System.out.println("배우: "+ actorNum);
 		System.out.println("관객수: "+ audienceNum);
-		System.out.println("영화총점: "+ score);
-		System.out.println("영화평점: "+ getGrade());
+		System.out.println("공연총점: "+ getAvg()+"(누적점수: "+score+")");
+		System.out.println("공연평점: "+ getGrade());
 		System.out.println("======================");
 	}
 }

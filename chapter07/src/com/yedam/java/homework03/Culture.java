@@ -1,7 +1,9 @@
 package com.yedam.java.homework03;
 
+import java.util.Scanner;
+
 public abstract class Culture {
-	
+	Scanner sc = new Scanner(System.in);
 
 	public String movieName;
 	public int derecterNum;
@@ -15,21 +17,34 @@ public abstract class Culture {
 		this.actorNum = actorNum; 
 	}
 	
+	//점수 관객수 누적
 	public void setTotalScore(int score) {
 		this.score += score; 
 		audienceNum ++;
 	}
 	
+	//점수 입력
+	public void inputScore() {
+		int count = Integer.parseInt(sc.nextLine());
+		setTotalScore(count);
+	}
+	 //총점(평균)
+	public int getAvg() {
+		int avg = score/audienceNum;
+		return avg;
+	}
+	
+	//평점(별)
 	public String getGrade() {
 		int avg = score/audienceNum;
 		String avgScore = null;
-		if(avg >= 50) {
+		if(avg >= 80) {
 			avgScore = "☆☆☆☆☆";
-		}else if(avg >= 40) {
+		}else if(avg >= 70) {
 			avgScore = "☆☆☆☆";
-		}else if(avg >= 30) {
+		}else if(avg >= 60) {
 			avgScore = "☆☆☆";
-		}else if(avg >=20) {
+		}else if(avg >=50) {
 			avgScore = "☆☆";
 		}else {
 			avgScore = "☆";
