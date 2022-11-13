@@ -36,15 +36,14 @@ public abstract class Culture {
 	
 	//평점(별)
 	public String getGrade() {
-		int avg = score/audienceNum;
 		String avgScore = null;
-		if(avg >= 80) {
+		if(getAvg() >= 80) {
 			avgScore = "☆☆☆☆☆";
-		}else if(avg >= 70) {
+		}else if(getAvg() >= 70) {
 			avgScore = "☆☆☆☆";
-		}else if(avg >= 60) {
+		}else if(getAvg() >= 60) {
 			avgScore = "☆☆☆";
-		}else if(avg >=50) {
+		}else if(getAvg() >=50) {
 			avgScore = "☆☆";
 		}else {
 			avgScore = "☆";
