@@ -1,4 +1,4 @@
-package com.yedam.java.ch0702;
+package com.yedam.java.ch0702_2;
 
 public class Tire {
 	//필드

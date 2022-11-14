@@ -1,4 +1,4 @@
-package com.yedam.java.ch0702;
+package com.yedam.java.ch0702_2;
 
 public class Car {
 	//Tire생성자로 Tire인스턴스 만듬.

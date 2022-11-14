@@ -1,4 +1,4 @@
-package com.yedam.java.ch0702;
+package com.yedam.java.ch0702_3;
 
 public class Application4 {
 	public static void main(String[] args) {
