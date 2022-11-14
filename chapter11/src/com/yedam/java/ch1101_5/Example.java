@@ -29,5 +29,19 @@ public class Example {
 			}
 		}
 		System.out.println("숫자 "+num+"개, 영어"+eng+"개");
+		
+		
+		//3) 생년월일
+		String date = "000510";
+		String birth = date.substring(0,2);
+		int age = Integer.parseInt(birth);
+		int manAge;
+		if(age >= 0 && age <= 22) {
+			manAge = (22 - age)-1;
+		}else{
+			manAge = (2022-(1900+age))-1;
+		}
+		System.out.println(manAge + "살");
+		
 	}
 }
