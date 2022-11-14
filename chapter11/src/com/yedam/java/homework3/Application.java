@@ -2,9 +2,9 @@ package com.yedam.java.homework3;
 
 import java.util.Scanner;
 
-import com.yedam.java.Homework1.ArcadeGame;
-import com.yedam.java.Homework1.Keypad;
-import com.yedam.java.Homework1.RPGgame;
+import com.yedam.java.homework1.ArcadeGame;
+import com.yedam.java.homework1.Keypad;
+import com.yedam.java.homework1.RPGgame;
 
 public class Application {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.yedam.java.Homework1;
+package com.yedam.java.homework1;
 
 public interface Keypad {
 	public static final int NORMAL_MODE = 0;
