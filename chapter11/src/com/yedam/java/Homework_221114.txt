@@ -66,7 +66,7 @@ Question 2]
 		- 다음과 같이 상수 필드를 정의한다.
 		(1) public static final int NOTEBOOK_MODE = 1;
 		- 다음과 같이 메소드를 정의한다.
-		(1) public abstract void writeDocumentaion() : 문서를 작성하는 기능
+		(1) public static final int NOTEBOOK_MODE = 1; : 문서를 작성하는 기능
 		(2) public abstract void searchInternet() : 인터넷을 검색하는 기능
 	
 	2) Tablet 인터페이스를 정의한다.
@@ -107,6 +107,7 @@ Question 3]
 	3) 아래와 같이 출력결과가 나오도록 실행코드를 구현한다.
 	- 출력결과
 		PRGgame 실행
+
 		============================================================================================
 		<< 1.LeftUP | 2.LeftDown | 3.RightUp | 4.RightDown | 5.ModeChange | 0.GameChange | 9.EXIT >>
 		============================================================================================
