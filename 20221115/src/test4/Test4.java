@@ -6,8 +6,8 @@ public class Test4 {
 		int man = 0;
 		int woman = 0;
 
-		for (int i = 0; i < arr.length; i++) {
-			char sex = arr[i].charAt(7);
+		for (String person : arr) {
+			char sex = person.charAt(7);
 			switch (sex) {
 			case '1':
 			case '3':
